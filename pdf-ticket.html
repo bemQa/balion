@@ -1,0 +1,448 @@
+﻿<html style="margin: 0; padding: 0;">
+<head>
+    <style>
+        @charset "UTF-8";
+        @font-face {
+            font-family: 'TT Norms';
+            src: url('fonts/TTNorms-Bold.eot');
+            src: local('TT Norms Bold'), local('TTNorms-Bold'),
+                url('fonts/TTNorms-Bold.eot?#iefix') format('embedded-opentype'),
+                url('fonts/TTNorms-Bold.woff2') format('woff2'),
+                url('fonts/TTNorms-Bold.woff') format('woff'),
+                url('fonts/TTNorms-Bold.ttf') format('truetype');
+            font-weight: bold;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'TT Norms';
+            src: url('fonts/TTNorms-ThinItalic.eot');
+            src: local('TT Norms Thin Italic'), local('TTNorms-ThinItalic'),
+                url('fonts/TTNorms-ThinItalic.eot?#iefix') format('embedded-opentype'),
+                url('fonts/TTNorms-ThinItalic.woff2') format('woff2'),
+                url('fonts/TTNorms-ThinItalic.woff') format('woff'),
+                url('fonts/TTNorms-ThinItalic.ttf') format('truetype');
+            font-weight: 100;
+            font-style: italic;
+        }
+        @font-face {
+            font-family: 'TT Norms';
+            src: url('fonts/TTNorms-Thin.eot');
+            src: local('TT Norms Thin'), local('TTNorms-Thin'),
+                url('fonts/TTNorms-Thin.eot?#iefix') format('embedded-opentype'),
+                url('fonts/TTNorms-Thin.woff2') format('woff2'),
+                url('fonts/TTNorms-Thin.woff') format('woff'),
+                url('fonts/TTNorms-Thin.ttf') format('truetype');
+            font-weight: 100;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'TT Norms';
+            src: url('fonts/TTNorms-LightItalic.eot');
+            src: local('TT Norms Light Italic'), local('TTNorms-LightItalic'),
+                url('fonts/TTNorms-LightItalic.eot?#iefix') format('embedded-opentype'),
+                url('fonts/TTNorms-LightItalic.woff2') format('woff2'),
+                url('fonts/TTNorms-LightItalic.woff') format('woff'),
+                url('fonts/TTNorms-LightItalic.ttf') format('truetype');
+            font-weight: 300;
+            font-style: italic;
+        }
+        @font-face {
+            font-family: 'TT Norms';
+            src: url('fonts/TTNorms-ExtraBoldItalic.eot');
+            src: local('TT Norms ExtraBold Italic'), local('TTNorms-ExtraBoldItalic'),
+                url('fonts/TTNorms-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+                url('fonts/TTNorms-ExtraBoldItalic.woff2') format('woff2'),
+                url('fonts/TTNorms-ExtraBoldItalic.woff') format('woff'),
+                url('fonts/TTNorms-ExtraBoldItalic.ttf') format('truetype');
+            font-weight: 800;
+            font-style: italic;
+        }
+        @font-face {
+            font-family: 'TT Norms';
+            src: url('fonts/TTNorms-Italic.eot');
+            src: local('TT Norms Italic'), local('TTNorms-Italic'),
+                url('fonts/TTNorms-Italic.eot?#iefix') format('embedded-opentype'),
+                url('fonts/TTNorms-Italic.woff2') format('woff2'),
+                url('fonts/TTNorms-Italic.woff') format('woff'),
+                url('fonts/TTNorms-Italic.ttf') format('truetype');
+            font-weight: normal;
+            font-style: italic;
+        }
+        @font-face {
+            font-family: 'TT Norms';
+            src: url('fonts/TTNorms-ExtraLight.eot');
+            src: local('TT Norms ExtraLight'), local('TTNorms-ExtraLight'),
+                url('fonts/TTNorms-ExtraLight.eot?#iefix') format('embedded-opentype'),
+                url('fonts/TTNorms-ExtraLight.woff2') format('woff2'),
+                url('fonts/TTNorms-ExtraLight.woff') format('woff'),
+                url('fonts/TTNorms-ExtraLight.ttf') format('truetype');
+            font-weight: 200;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'TT Norms';
+            src: url('fonts/TTNorms-HeavyItalic.eot');
+            src: local('TT Norms Heavy Italic'), local('TTNorms-HeavyItalic'),
+                url('fonts/TTNorms-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+                url('fonts/TTNorms-HeavyItalic.woff2') format('woff2'),
+                url('fonts/TTNorms-HeavyItalic.woff') format('woff'),
+                url('fonts/TTNorms-HeavyItalic.ttf') format('truetype');
+            font-weight: 900;
+            font-style: italic;
+        }
+        @font-face {
+            font-family: 'TT Norms';
+            src: url('fonts/TTNorms-MediumItalic.eot');
+            src: local('TT Norms Medium Italic'), local('TTNorms-MediumItalic'),
+                url('fonts/TTNorms-MediumItalic.eot?#iefix') format('embedded-opentype'),
+                url('fonts/TTNorms-MediumItalic.woff2') format('woff2'),
+                url('fonts/TTNorms-MediumItalic.woff') format('woff'),
+                url('fonts/TTNorms-MediumItalic.ttf') format('truetype');
+            font-weight: 500;
+            font-style: italic;
+        }
+        @font-face {
+            font-family: 'TT Norms';
+            src: url('fonts/TTNorms-BoldItalic.eot');
+            src: local('TT Norms Bold Italic'), local('TTNorms-BoldItalic'),
+                url('fonts/TTNorms-BoldItalic.eot?#iefix') format('embedded-opentype'),
+                url('fonts/TTNorms-BoldItalic.woff2') format('woff2'),
+                url('fonts/TTNorms-BoldItalic.woff') format('woff'),
+                url('fonts/TTNorms-BoldItalic.ttf') format('truetype');
+            font-weight: bold;
+            font-style: italic;
+        }
+        @font-face {
+            font-family: 'TT Norms';
+            src: url('fonts/TTNorms-Heavy.eot');
+            src: local('TT Norms Heavy'), local('TTNorms-Heavy'),
+                url('fonts/TTNorms-Heavy.eot?#iefix') format('embedded-opentype'),
+                url('fonts/TTNorms-Heavy.woff2') format('woff2'),
+                url('fonts/TTNorms-Heavy.woff') format('woff'),
+                url('fonts/TTNorms-Heavy.ttf') format('truetype');
+            font-weight: 900;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'TT Norms';
+            src: url('fonts/TTNorms-Light.eot');
+            src: local('TT Norms Light'), local('TTNorms-Light'),
+                url('fonts/TTNorms-Light.eot?#iefix') format('embedded-opentype'),
+                url('fonts/TTNorms-Light.woff2') format('woff2'),
+                url('fonts/TTNorms-Light.woff') format('woff'),
+                url('fonts/TTNorms-Light.ttf') format('truetype');
+            font-weight: 300;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'TT Norms';
+            src: url('fonts/TTNorms-Medium.eot');
+            src: local('TT Norms Medium'), local('TTNorms-Medium'),
+                url('fonts/TTNorms-Medium.eot?#iefix') format('embedded-opentype'),
+                url('fonts/TTNorms-Medium.woff2') format('woff2'),
+                url('fonts/TTNorms-Medium.woff') format('woff'),
+                url('fonts/TTNorms-Medium.ttf') format('truetype');
+            font-weight: 500;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'TT Norms';
+            src: url('fonts/TTNorms-ExtraBold.eot');
+            src: local('TT Norms ExtraBold'), local('TTNorms-ExtraBold'),
+                url('fonts/TTNorms-ExtraBold.eot?#iefix') format('embedded-opentype'),
+                url('fonts/TTNorms-ExtraBold.woff2') format('woff2'),
+                url('fonts/TTNorms-ExtraBold.woff') format('woff'),
+                url('fonts/TTNorms-ExtraBold.ttf') format('truetype');
+            font-weight: 800;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'TT Norms';
+            src: url('fonts/TTNorms-ExtraLightItalic.eot');
+            src: local('TT Norms ExtraLight Italic'), local('TTNorms-ExtraLightItalic'),
+                url('fonts/TTNorms-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+                url('fonts/TTNorms-ExtraLightItalic.woff2') format('woff2'),
+                url('fonts/TTNorms-ExtraLightItalic.woff') format('woff'),
+                url('fonts/TTNorms-ExtraLightItalic.ttf') format('truetype');
+            font-weight: 200;
+            font-style: italic;
+        }
+        @font-face {
+            font-family: 'TT Norms';
+            src: url('fonts/TTNorms-Regular.eot');
+            src: local('TT Norms Regular'), local('TTNorms-Regular'),
+                url('fonts/TTNorms-Regular.eot?#iefix') format('embedded-opentype'),
+                url('fonts/TTNorms-Regular.woff2') format('woff2'),
+                url('fonts/TTNorms-Regular.woff') format('woff'),
+                url('fonts/TTNorms-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'TT Norms';
+            src: url('fonts/TTNorms-BlackItalic.eot');
+            src: local('TT Norms Black Italic'), local('TTNorms-BlackItalic'),
+                url('fonts/TTNorms-BlackItalic.eot?#iefix') format('embedded-opentype'),
+                url('fonts/TTNorms-BlackItalic.woff2') format('woff2'),
+                url('fonts/TTNorms-BlackItalic.woff') format('woff'),
+                url('fonts/TTNorms-BlackItalic.ttf') format('truetype');
+            font-weight: 900;
+            font-style: italic;
+        }
+        @font-face {
+            font-family: 'TT Norms';
+            src: url('fonts/TTNorms-Black.eot');
+            src: local('TT Norms Black'), local('TTNorms-Black'),
+                url('fonts/TTNorms-Black.eot?#iefix') format('embedded-opentype'),
+                url('fonts/TTNorms-Black.woff2') format('woff2'),
+                url('fonts/TTNorms-Black.woff') format('woff'),
+                url('fonts/TTNorms-Black.ttf') format('truetype');
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        html,
+        body {
+            font-size: calc(100vw / 834);
+            height: 100%;
+        }
+        body {
+            margin: 0; 
+            padding: 0; 
+            background: #fff; 
+            font-family: 'TT Norms', sans-serif;
+            color: #2E3649;
+        }
+        * {
+            outline: none;
+            vertical-align: top;
+        }
+        *,
+        :after,
+        :before {
+            box-sizing: border-box;
+        }
+        b {
+            font-weight: bold;
+        }
+        img {
+            max-width: 100%;
+            image-rendering: optimizequality;
+            image-rendering: -webkit-optimize-contrast;
+        }
+        .pageframe {
+            display: flex;
+            flex-direction: column;
+            width: 834rem;
+            height: 1180rem;
+            padding: 30rem;
+            background: #fff;
+            font-weight: 500;
+            font-size: 16rem;
+            line-height: 1.5;
+        }
+        table {
+            border: 0;
+            border-spacing: 0;
+            font-weight: 500;
+            font-size: 16rem;
+            line-height: 1.5;
+        }
+        .header {
+            width: 100%;
+            margin-bottom: 80rem;
+        }
+        .header td {
+            vertical-align: middle;
+        }
+        .logo {
+            width: 143rem;
+            margin-bottom: 20rem;
+        }
+        .logo img {
+            width: 100%;
+        }
+        .logo-pl {
+            width: 90rem;
+            margin-bottom: 20rem;
+        }
+        .logo-pl img {
+            width: 100%;
+        }
+        .header-address {
+            font-size: 16rem;
+            line-height: 1.5;
+        }
+        .qr-code {
+            width: 224rem;
+            margin-left: auto;
+        }
+        .qr-code img {
+            width: 100%;
+        }
+        .tarif-info-block {
+            width: 100%;
+            margin-bottom: 30rem;
+        }
+        .tarif-coupon {
+            font-size: 16rem;
+            line-height: 1;
+        }
+        .tarif-title {
+            font-weight: 700;
+            font-size: 36rem;
+            line-height: 1.5;
+        }
+        .tarif-name {
+            font-weight: 700;
+            font-size: 26rem;
+            line-height: 1.5;
+        }
+        .tarif-block {
+            margin-bottom: 20rem;
+        }
+        .tarif-info-name {
+            width: 200rem;
+            padding-right: 10rem;
+            font-size: 16rem;
+            line-height: 1.5;
+            padding-bottom: 20rem;
+        }
+        tr:last-child .tarif-info-name {
+            padding-bottom: 0;
+        }
+        .tarif-info-name span {
+            font-size: 12rem;
+        }
+        .tarif-info-detail {
+            font-size: 16rem;
+            line-height: 1.5;
+            padding-bottom: 20rem;
+        }
+        tr:last-child .tarif-info-detail {
+            padding-bottom: 0;
+        }
+        .order-date {
+            font-size: 16rem;
+            line-height: 1.5;
+            text-align: right;
+        }
+        .guides-title {
+            font-weight: 700;
+            font-size: 16rem;
+            line-height: 1.5;
+            margin-bottom: 6rem;
+        }
+        .guides-text {
+            font-size: 16rem;
+            line-height: 1.5;
+        }
+        .footer {
+            margin-top: auto;
+            padding-top: 30rem;
+        }
+        .footer-text {
+            max-width: 500rem;
+            font-size: 14rem;
+            line-height: 1.5;
+        }
+        .separator {
+            position: relative;
+            width: 100%;
+            height: 6rem;
+            margin: 32px auto;
+        }
+        .separator::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -30rem;
+            right: -30rem;
+            bottom: 0;
+            margin: auto;
+            width: calc(100% + 60rem);
+            height: 1rem;
+            border-bottom: 1rem dashed #000;
+        }
+        .separator::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            width: 204rem;
+            height: 6rem;
+            border-bottom: 6rem solid #000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="pageframe">
+        <table class="header" border="0">
+            <tr>
+                <td width="60%">
+                    <div class="logo">
+                        <img src="img/logo-black.svg">
+                    </div>
+                    <div class="logo-pl">
+                        <img src="img/logo-pl.svg">
+                    </div>
+                    <div class="header-address">
+                        ООО «Питерленд Аква-Спа» ИНН 7814235445 <br>
+                        Санкт-Петербург, Приморский проспект 72
+                    </div>
+                </td>
+                <td width="40%" style="text-align: right;">
+                    <div class="qr-code">
+                        <img src="img/qr.png" alt="">
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div class="main">
+            <div class="tarif-info-block">
+                <div class="tarif-coupon">Входной купон №A00000001</div>
+                <div class="tarif-title">Посещение аквапарка «Питерленд»</div>
+                <div class="tarif-name">Взрослый, 3 часа</div>
+            </div>
+            <table class="tarif-block">
+                <tr>
+                    <td class="tarif-info-name">Стоимость (Price):</td>
+                    <td class="tarif-info-detail">2 000 ₽</td>
+                </tr>
+                <tr>
+                    <td class="tarif-info-name">Действителен до:</td>
+                    <td class="tarif-info-detail">22.03.2024</td>
+                </tr>
+                <tr>
+                    <td class="tarif-info-name">Номер заказа:</td>
+                    <td class="tarif-info-detail">000001</td>
+                </tr>
+            </table>
+            <div class="order-date">25.07.23 16:44</div>
+        </div>
+        <div class="separator"></div>
+        <div class="guides">
+            <div class="rules-info">
+                <div class="guides-title">Правила</div>
+                <div class="guides-text">
+                    Обратитесь к администратору аквапарка для получения браслета. Расписка об ознакомлении с правилами аквапарка доступна по ссылке http://www.aqua.piterland.ru/pages/regulations.php При посещении аквапарка с собой необходимо взять купальный костюм, полотенце, обувь на нескользящей резиновой подошве. Полотенце можно взять в прокат в самом аквапарке - 200 р. Также все это можно приобрести в магазине аквапарка.
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="footer">
+            <div class="footer-text">
+                ООО "БАЛИОН" <br>
+                ИНН: 7814738791 <br>
+                ОГРН: 1187847236939 <br>
+                197374, Г.Санкт-Петербург, вн.тер. г. Муниципальный Округ № 65, <br>пр-кт Приморский, дом 72, литера А, помещение 1.45
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
