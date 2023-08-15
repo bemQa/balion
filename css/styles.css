@@ -574,6 +574,10 @@ body {
     transition: all .3s ease;
 }
 
+.header.active {
+    top: 0;
+}
+
 .header::before {
     content: '';
     position: absolute;
