@@ -2189,7 +2189,7 @@ img.logo-sbp {
 
 .tarif-table th:nth-child(6),
 .tarif-table td:nth-child(6) {
-    width: 120rem;
+    width: 150rem;
 }
 
 .tarif-table th,
@@ -2966,6 +2966,10 @@ a.breadcrumb:hover {
         border-radius: 0 0 10rem 10rem;
     }
 
+    .header.active {
+        top: 0;
+    }
+
     .header::before {
         border-radius: 0 0 10rem 10rem;
     }
@@ -3269,7 +3273,7 @@ a.breadcrumb:hover {
 
     .tarif-table th:nth-child(6), 
     .tarif-table td:nth-child(6) {
-        width: 100rem;
+        width: 120rem;
     }
 
     .btn-logout {

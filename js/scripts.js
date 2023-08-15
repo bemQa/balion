@@ -8,7 +8,7 @@ $(document).ready(function() {
     // анимация меню
     $('.menu').click(function(e){
         e.preventDefault();
-        (this.classList.contains('active') === true) ? this.classList.remove('active') : this.classList.add('active');
+        ($('.menu').hasClass('active') === true) ? $('.menu').removeClass('active') : $('.menu').addClass('active');
 
         $('.header').toggleClass('active');
         $('body').on('click', function (e) {
