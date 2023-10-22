@@ -136,6 +136,14 @@ $(document).ready(function() {
                 }
             }
         }
+
+        let tooltip = $(this).parents('.buy-tickets-count-info').find('.tooltip-input-count');
+        if ($(this).hasClass('btn-plus disabled-btn')) {
+            tooltip.addClass('show').text('Нельзя добавить больше билетов в заказ');
+            setTimeout(function() {
+                tooltip.removeClass('show');
+            }, 2000);
+        }
     });
     $('body').on('change keyup', '.input-number', function() {
         var min = $(this).attr('min');
@@ -146,7 +154,7 @@ $(document).ready(function() {
             $(this).parent().find(".btn-number[data-type='minus'][data-field='" + name + "']").attr('disabled', 'true');
         } else $(this).parent().find(".btn-number[data-type='minus'][data-field='" + name + "']").removeAttr('disabled');
         if (val == max) {
-            $(this).parent().find(".btn-number[data-type='plus'][data-field='" + name + "']").attr('disabled', 'true');
-        } else $(this).parent().find(".btn-number[data-type='plus'][data-field='" + name + "']").removeAttr('disabled');
+            $(this).parent().find(".btn-number[data-type='plus'][data-field='" + name + "']").addClass('disabled-btn');
+        } else $(this).parent().find(".btn-number[data-type='plus'][data-field='" + name + "']").removeClass('disabled-btn');
     });
 });

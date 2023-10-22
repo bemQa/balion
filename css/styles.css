@@ -1657,6 +1657,7 @@ ol ol li::before {
 }
 
 .buy-tickets-count-info {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1706,7 +1707,8 @@ ol ol li::before {
     z-index: 1;
 }
 
-.input-count-group .btn-number[disabled] {
+.input-count-group .btn-number[disabled],
+.input-count-group .btn-number.disabled-btn {
     background: #F1F2F3;
     color: #8F939D;
     cursor: not-allowed;
@@ -2908,6 +2910,40 @@ a.breadcrumb:hover {
     margin-left: auto;
 }
 
+.form-horizontal {
+    display: flex;
+    align-items: baseline;
+}
+
+.form-horizontal *:not(:last-child) {
+    margin-right: 10rem;
+}
+
+.tooltip-input-count {
+    position: absolute;
+    top: -50rem;
+    right: 0;
+    width: 200rem;
+    padding: 10rem;
+    background: #fff;
+    border-radius: 10rem;
+    box-shadow: 0rem 2rem 20rem 0rem rgba(0, 0, 0, 0.1);
+    transition: all .3s ease;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(.8);
+    font-weight: 500;
+    font-size: 14rem;
+    line-height: normal;
+    z-index: 1;
+}
+
+.tooltip-input-count.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+}
+
 /*end main styles*/
 
 /*adaptive styles*/
@@ -3515,6 +3551,10 @@ a.breadcrumb:hover {
         width: 100%;
     }
 
+    .two-inputs *:not(:last-child) {
+        margin-right: 0;
+    }
+
     .two-inputs .input_text {
         padding: 15rem;
         font-size: 14rem;
@@ -3525,6 +3565,18 @@ a.breadcrumb:hover {
         width: 100%;
         padding: 15rem 40rem;
         font-size: 16rem;
+    }
+
+    .form-horizontal {
+        flex-wrap: wrap;
+    }
+
+    .form-horizontal *:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .form-horizontal .btn + .btn {
+        margin-left: 10rem;
     }
 }
 
