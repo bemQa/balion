@@ -102,6 +102,7 @@ $(document).ready(function() {
     pinCode();
 
     // кнопки +-
+    $('.btn-number').parents('.buy-tickets-count-info').append('<div class="tooltip-input-count"></div>');
     $('body').on('click', '.btn-number', function(e) {
         var type = $(this).attr('data-type');
         var field = $(this).attr('data-field');
